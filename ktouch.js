@@ -119,6 +119,7 @@
             try {
                 var el = util.$(el);
                 eventMap[type].call(el, fn);
+                return this;
             } catch (e) {
                 console.error('type error : %s is not allowed', type);
             }
