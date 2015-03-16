@@ -25,3 +25,16 @@
 //     useSprite: true
 //}]);
 //fis.config.set('settings.spriter.csssprites.margin', 20);
+//roadmap
+fis.config.merge({
+    roadmap: {
+        path: [
+            {
+                //所有的js文件
+                reg: '**.js',
+                //发布到/static/js/xxx目录下
+                release: '/static/js$&'
+            }
+        ]
+    }
+});
